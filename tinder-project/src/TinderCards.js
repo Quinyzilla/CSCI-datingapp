@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
 
 function TinderCards(){
@@ -15,9 +16,13 @@ function TinderCards(){
 
     return (
         <div className = "tinderCards">
-            {people.map((person) => (
-                <h1>{person.name}</h1>
+            <div className = "tinderCards__cardContainer">
+                {people.map((person) => (
+                    <TinderCard>
+
+                    </TinderCard>
             ))}
+            </div>
         </div>
     );
 }
