@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import TinderCard from "react-tinder-card";
-import "./TinderCards.css";
+import TinderCard from "react-dating-card";
+import "./DatingCards.css";
 
-function TinderCards(){
+function DatingCards(){
     const [people, setPeople] = useState([
         {
             name: 'Ben Affleck',
@@ -22,8 +22,8 @@ const outOfFrame = (name) => {
 };
 
     return (
-        <div className = "tinderCards">
-            <div className = "tinderCards__cardContainer">
+        <div className = "datingCards">
+            <div className = "datingCards__cardContainer">
                 {people.map((person) => (
                     <TinderCard
                         className = "swipe"
@@ -33,12 +33,12 @@ const outOfFrame = (name) => {
                         onCardLeftScreen = {() => outOfFrame(person.name)}
                     >
                         <div
-                            style = {{ backgroundImage: `url(${person.url})`}}
+                            style = {{ backgroundImage: `url(${person.imgUrl})`}}
                             className = "card"
                         >
                             <h3>{person.name}</h3>
                         </div>
-                    </TinderCard>
+                    </DatingCard>
                 ))}
             </div>
         </div>
