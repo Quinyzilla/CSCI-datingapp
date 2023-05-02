@@ -3,7 +3,7 @@ import DatingCard from "react-dating-card";
 import "./DatingCards.css";
 //import axios from "./axios";
 
-function DatingCards () {
+const DatingCards = () => {
     const [people] = useState([
         {
             name: "ben affleck",
