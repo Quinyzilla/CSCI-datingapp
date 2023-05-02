@@ -1,13 +1,13 @@
 import React from "react";
 import "./SwipeButtons.css";
-import ReplayIcon from "@material-ui/icons/Replay";
-import CloseIcon from "@material-ui/icons/Close";
-import StarRateIcon from "@material-ui/icons/StarRate";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import FlashOnIcon from "@material-ui/icons/FlashOn";
-import IconButton from "@material-ui/core/IconButton";
+import ReplayIcon from "@mui/icons-material/Replay";
+import CloseIcon from "@mui/icons-material/Close";
+import StarRateIcon from "@mui/icons-material/StarRate";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FlashOnIcon from "@mui/icons-material/FlashOn";
+import IconButton from "@mui/material/IconButton";
 
-function SwipeButtons(){
+const SwipeButtons = () => {
     return (
         <div className="swipeButtons">
             <IconButton className="swipeButtons__repeat">
